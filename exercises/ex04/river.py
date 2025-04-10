@@ -7,6 +7,8 @@ from exercises.EX04.bear import Bear
 
 
 class River:
+    """Beginning of River class def."""
+
     day: int
     bears: list[Bear]
     fish: list[Fish]
