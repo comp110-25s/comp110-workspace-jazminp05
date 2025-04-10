@@ -1,4 +1,4 @@
-"""Simulates river class"""
+"""Simulates river class."""
 
 __author__ = "730672588"
 
