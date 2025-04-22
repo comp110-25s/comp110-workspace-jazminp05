@@ -37,9 +37,11 @@ def max(head: Node | None) -> int:
         raise ValueError("Cannot call max with None")
     if head.next is None:
         return head.value
+    rest = max(head.next)
+    if head.value > rest:
+        return head.value
     else:
-        rest: int = max(head.next)
-        return max(head.value, rest)  # type: ignore
+        return rest
 
 
 def linkify(items: list[int]) -> Node | None:
