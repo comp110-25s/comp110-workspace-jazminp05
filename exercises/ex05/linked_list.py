@@ -35,10 +35,10 @@ def max(head: Node | None) -> int:
     """Defines max function using the Node class."""
     if head is None:
         raise ValueError("Cannot call max with None")
-    elif head.next is None:
+    if head.next is None:
         return head.value
     else:
-        rest = max(head.next)
+        rest: int = max(head.next)
         return head.value + rest
 
 
