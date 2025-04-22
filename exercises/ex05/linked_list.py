@@ -39,7 +39,7 @@ def max(head: Node | None) -> int:
         return head.value
     else:
         rest: int = max(head.next)
-        return head.value + rest
+        return max(head.value, rest)  # type: ignore
 
 
 def linkify(items: list[int]) -> Node | None:
